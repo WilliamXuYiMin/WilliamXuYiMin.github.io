@@ -64,42 +64,6 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-Hexo-Create-Blogs-1" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/01/22/Hexo-Create-Blogs-1/" class="article-date">
-  <time datetime="2020-01-22T15:52:22.000Z" itemprop="datePublished">2020-01-22</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/22/Hexo-Create-Blogs-1/">Hexo Create Blogs</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/22/Hexo-Create-Blogs-1/" data-id="ck5phmeci0001g8pa5mgbbg3v" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
     <article id="post-Hexo-Create-Blogs" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2020/01/22/Hexo-Create-Blogs/" class="article-date">
@@ -134,6 +98,14 @@
 <p>执行下面的命令，将markdown文件生成静态网页。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
+<h3 id="部署GitHub"><a href="#部署GitHub" class="headerlink" title="部署GitHub"></a>部署GitHub</h3><p>在hexo下找到_config.yml，找到</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>:</span><br></pre></td></tr></table></figure>
+<p>修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/xxxx/xxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装hexo-deployer-git，-以及部署"><a href="#安装hexo-deployer-git，-以及部署" class="headerlink" title="安装hexo-deployer-git， 以及部署"></a>安装hexo-deployer-git， 以及部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="部署成功"><a href="#部署成功" class="headerlink" title="部署成功"></a>部署成功</h3><p>在浏览器中打开 xxxx.github.io ，正常显示网页，表明部署成功。</p>
+<h3 id="引用来源"><a href="#引用来源" class="headerlink" title="引用来源"></a>引用来源</h3><p>More info: <a href="https://juejin.im/post/5a07cf9951882503dc532fd8#heading-6" target="_blank" rel="noopener">Generating</a></p>
 
       
     </div>
@@ -263,10 +235,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2020/01/22/Hexo-Create-Blogs-1/">Hexo Create Blogs</a>
-          </li>
         
           <li>
             <a href="/2020/01/22/Hexo-Create-Blogs/">Hexo-Create-Blogs</a>

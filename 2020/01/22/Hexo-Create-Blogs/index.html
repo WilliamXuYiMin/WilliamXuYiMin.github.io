@@ -15,7 +15,7 @@
 <meta property="og:description" content="title: Hexo制作Blogs的流程说明 步骤一、创建github仓库在github创建与用户名对应的仓库，如用户名为xxxx，则需要创建的仓库为 xxxx.github.io。 步骤二、安装hexo1$ npm install -g hexo 手动创建hexo文件夹,假如创建的目录为&#x2F;Users&#x2F;williamii&#x2F;Documents&#x2F;hexo 1234$ cd &#x2F;Users&#x2F;willi">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-01-22T15:51:53.341Z">
-<meta property="article:modified_time" content="2020-01-22T15:52:11.979Z">
+<meta property="article:modified_time" content="2020-01-22T16:02:25.626Z">
 <meta property="article:author" content="WilliamII">
 <meta name="twitter:card" content="summary">
   
@@ -100,6 +100,14 @@
 <p>执行下面的命令，将markdown文件生成静态网页。</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
 
+<h3 id="部署GitHub"><a href="#部署GitHub" class="headerlink" title="部署GitHub"></a>部署GitHub</h3><p>在hexo下找到_config.yml，找到</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>:</span><br></pre></td></tr></table></figure>
+<p>修改为</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/xxxx/xxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+
+<h3 id="安装hexo-deployer-git，-以及部署"><a href="#安装hexo-deployer-git，-以及部署" class="headerlink" title="安装hexo-deployer-git， 以及部署"></a>安装hexo-deployer-git， 以及部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<h3 id="部署成功"><a href="#部署成功" class="headerlink" title="部署成功"></a>部署成功</h3><p>在浏览器中打开 xxxx.github.io ，正常显示网页，表明部署成功。</p>
+<h3 id="引用来源"><a href="#引用来源" class="headerlink" title="引用来源"></a>引用来源</h3><p>More info: <a href="https://juejin.im/post/5a07cf9951882503dc532fd8#heading-6" target="_blank" rel="noopener">Generating</a></p>
 
       
     </div>
@@ -112,15 +120,6 @@
   
     
 <nav id="article-nav">
-  
-    <a href="/2020/01/22/Hexo-Create-Blogs-1/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hexo Create Blogs
-        
-      </div>
-    </a>
   
   
     <a href="/2020/01/22/My-New-Post/" id="article-nav-older" class="article-nav-link-wrap">
@@ -160,10 +159,6 @@
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
-        
-          <li>
-            <a href="/2020/01/22/Hexo-Create-Blogs-1/">Hexo Create Blogs</a>
-          </li>
         
           <li>
             <a href="/2020/01/22/Hexo-Create-Blogs/">Hexo-Create-Blogs</a>
