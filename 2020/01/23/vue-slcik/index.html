@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>徐逸民</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="徐逸民">
+  <title>vue-click插件完成轮播图效果 | 徐逸民</title>
+  <meta name="keywords" content=" VUE ">
+  <meta name="description" content="vue-click插件完成轮播图效果 | 徐逸民">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="title: Hexo制作Blogs的流程说明 步骤一、创建github仓库在github创建与用户名对应的仓库，如用户名为xxxx，则需要创建的仓库为 xxxx.github.io。 步骤二、安装hexo1$ npm install -g hexo 手动创建hexo文件夹,假如创建的目录为&#x2F;Users&#x2F;williamii&#x2F;Documents&#x2F;hexo 1234$ cd &#x2F;Users&#x2F;willi">
 <meta property="og:type" content="website">
@@ -52,7 +52,7 @@
 </div>
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/" class="avatar_target">
     <img class="avatar" src="/img/avatar.jpg" />
@@ -349,12 +349,55 @@
         </div>
     </div>
 </aside>
-<div class="post index">
+<div class="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-vue-slcik" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#徐逸民"><span class="toc-text">徐逸民</span></a></li></ol>
+        <h1 class="article-title">vue-click插件完成轮播图效果</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            
+                <a  data-rel="VUE">VUE</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            
+            <a class="color4">VUE</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+        创建时间:<time class="date" title='更新时间: 2020-01-23 15:47:16'>2020-01-23 15:44</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读:<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#步骤一、下载vue-click"><span class="toc-text">步骤一、下载vue-click</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#步骤二、-在vue文件中使用"><span class="toc-text">步骤二、 在vue文件中使用</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -367,14 +410,41 @@
     }
 </style>
 </div>
-            <h1 id="徐逸民"><a href="#徐逸民" class="headerlink" title="徐逸民"></a>徐逸民</h1>
-        </article>
-        
-       <!--  <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p> -->
-        
-        
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="步骤一、下载vue-click"><a href="#步骤一、下载vue-click" class="headerlink" title="步骤一、下载vue-click"></a>步骤一、下载vue-click</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install vue-slick</span><br></pre></td></tr></table></figure>
+<h3 id="步骤二、-在vue文件中使用"><a href="#步骤二、-在vue文件中使用" class="headerlink" title="步骤二、 在vue文件中使用"></a>步骤二、 在vue文件中使用</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div class=<span class="string">"hello"</span>&gt;</span><br><span class="line">    &lt;h1&gt;&#123;&#123; msg &#125;&#125;&lt;/h1&gt;</span><br><span class="line">    &lt;slick</span><br><span class="line">      ref=<span class="string">"slick"</span></span><br><span class="line">      :options=<span class="string">"slickOptions"</span></span><br><span class="line">      @afterChange=<span class="string">"handleAfterChange"</span></span><br><span class="line">      @beforeChange=<span class="string">"handleBeforeChange"</span></span><br><span class="line">      @breakpoint=<span class="string">"handleBreakpoint"</span></span><br><span class="line">      @destroy=<span class="string">"handleDestroy"</span></span><br><span class="line">      @edge=<span class="string">"handleEdge"</span></span><br><span class="line">      @init=<span class="string">"handleInit"</span></span><br><span class="line">      @reInit=<span class="string">"handleReInit"</span></span><br><span class="line">      @setPosition=<span class="string">"handleSetPosition"</span></span><br><span class="line">      @swipe=<span class="string">"handleSwipe"</span></span><br><span class="line">      @lazyLoaded=<span class="string">"handleLazyLoaded"</span></span><br><span class="line">      @lazyLoadError=<span class="string">"handleLazeLoadError"</span></span><br><span class="line">    &gt;</span><br><span class="line">    &lt;a href=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi.jpg"</span>&gt;</span><br><span class="line">        &lt;img src=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi.jpg"</span> alt /&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line">      &lt;a href=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-001.jpg"</span>&gt;</span><br><span class="line">        &lt;img src=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-001.jpg"</span> alt /&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line">      &lt;a href=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-002.jpg"</span>&gt;</span><br><span class="line">        &lt;img src=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-002.jpg"</span> alt /&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line">      &lt;a href=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-003.jpg"</span>&gt;</span><br><span class="line">        &lt;img src=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-003.jpg"</span> alt /&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line">      &lt;a href=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-004.jpg"</span>&gt;</span><br><span class="line">        &lt;img src=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-004.jpg"</span> alt /&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line">      &lt;a href=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-005.jpg"</span>&gt;</span><br><span class="line">        &lt;img src=<span class="string">"https://img.ivsky.com/img/tupian/pre/201907/29/sanmingzhi-005.jpg"</span> alt /&gt;</span><br><span class="line">      &lt;/a&gt;</span><br><span class="line">    &lt;/slick&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script&gt;</span><br><span class="line">import Slick from <span class="string">"vue-slick"</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">export</span> default &#123;</span><br><span class="line">  name: <span class="string">"HelloWorld"</span>,</span><br><span class="line">  props: &#123;</span><br><span class="line">    msg: String</span><br><span class="line">  &#125;,</span><br><span class="line">  components: &#123; Slick &#125;,</span><br><span class="line">  <span class="function"><span class="title">data</span></span>() &#123;</span><br><span class="line">    <span class="built_in">return</span> &#123;</span><br><span class="line">      slickOptions: &#123;</span><br><span class="line">        slidesToShow: 3</span><br><span class="line">        // Any other options that can be got from plugin documentation</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    <span class="function"><span class="title">next</span></span>() &#123;</span><br><span class="line">      this.<span class="variable">$refs</span>.slick.next();</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="title">prev</span></span>() &#123;</span><br><span class="line">      this.<span class="variable">$refs</span>.slick.prev();</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="title">reInit</span></span>() &#123;</span><br><span class="line">      // Helpful <span class="keyword">if</span> you have to deal with v-for to update dynamic lists</span><br><span class="line">      this.<span class="variable">$nextTick</span>(() =&gt; &#123;</span><br><span class="line">        this.<span class="variable">$refs</span>.slick.reSlick();</span><br><span class="line">      &#125;);</span><br><span class="line">    &#125;,</span><br><span class="line"></span><br><span class="line">    // Events listeners</span><br><span class="line">    handleAfterChange(event, slick, currentSlide) &#123;</span><br><span class="line">      console.log(<span class="string">"handleAfterChange"</span>, event, slick, currentSlide);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleBeforeChange(event, slick, currentSlide, nextSlide) &#123;</span><br><span class="line">      console.log(<span class="string">"handleBeforeChange"</span>, event, slick, currentSlide, nextSlide);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleBreakpoint(event, slick, breakpoint) &#123;</span><br><span class="line">      console.log(<span class="string">"handleBreakpoint"</span>, event, slick, breakpoint);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleDestroy(event, slick) &#123;</span><br><span class="line">      console.log(<span class="string">"handleDestroy"</span>, event, slick);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleEdge(event, slick, direction) &#123;</span><br><span class="line">      console.log(<span class="string">"handleEdge"</span>, event, slick, direction);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleInit(event, slick) &#123;</span><br><span class="line">      console.log(<span class="string">"handleInit"</span>, event, slick);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleReInit(event, slick) &#123;</span><br><span class="line">      console.log(<span class="string">"handleReInit"</span>, event, slick);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleSetPosition(event, slick) &#123;</span><br><span class="line">      console.log(<span class="string">"handleSetPosition"</span>, event, slick);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleSwipe(event, slick, direction) &#123;</span><br><span class="line">      console.log(<span class="string">"handleSwipe"</span>, event, slick, direction);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleLazyLoaded(event, slick, image, imageSource) &#123;</span><br><span class="line">      console.log(<span class="string">"handleLazyLoaded"</span>, event, slick, image, imageSource);</span><br><span class="line">    &#125;,</span><br><span class="line">    handleLazeLoadError(event, slick, image, imageSource) &#123;</span><br><span class="line">      console.log(<span class="string">"handleLazeLoadError"</span>, event, slick, image, imageSource);</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;!-- Add <span class="string">"scoped"</span> attribute to <span class="built_in">limit</span> CSS to this component only --&gt;</span><br><span class="line">&lt;style scoped&gt;</span><br><span class="line">@import <span class="string">'../../node_modules/vue-slick/node_modules/slick-carousel/slick/slick.css'</span>;</span><br><span class="line"></span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+
+
+
+<div class="article_copyright">
+    <p><span class="copy-title">文章标题:</span>vue-click插件完成轮播图效果</p>
+    
+    <p><span class="copy-title">本文作者:</span><a  title="WilliamII">WilliamII</a></p>
+    <p><span class="copy-title">发布时间:</span>2020-01-23, 15:44:24</p>
+    <p><span class="copy-title">最后更新:</span>2020-01-23, 15:47:16</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/23/vue-slcik/" title="vue-click插件完成轮播图效果">http://yoursite.com/2020/01/23/vue-slcik/</a>
+    <p>
+        <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+    </p>
+</div>
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">©2016-2019 Yelog</p>
@@ -394,24 +464,6 @@
     </div>
 </div>
 <div class="acParent"></div>
-
-<div class="hide_box" onclick="dashangToggle()"></div>
-<div class="shang_box">
-    <a class="shang_close"  onclick="dashangToggle()">×</a>
-    <div class="shang_tit">
-        <p>喜欢就点赞,疼爱就打赏</p>
-    </div>
-    <div class="shang_payimg">
-        <div class="pay_img">
-            <img src="/img/alipay.jpg" class="alipay" title="扫码支持">
-            <img src="/img/weixin.jpg" class="weixin" title="扫码支持">
-        </div>
-    </div>
-    <div class="shang_payselect">
-        <span><label><input type="radio" name="pay" checked value="alipay">支付宝</label></span><span><label><input type="radio" name="pay" value="weixin">微信</label></span>
-    </div>
-</div>
-
 
 </body>
 <script src="/js/jquery.pjax.js?v=1.0.1" ></script>
