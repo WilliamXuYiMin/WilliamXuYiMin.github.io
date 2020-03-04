@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>JS基础 | 徐逸民</title>
-  <meta name="keywords" content=" JS ">
-  <meta name="description" content="JS基础 | 徐逸民">
+  <title>diary20200304 | 徐逸民</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="diary20200304 | 徐逸民">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="title: Hexo制作Blogs的流程说明 步骤一、创建github仓库在github创建与用户名对应的仓库，如用户名为xxxx，则需要创建的仓库为 xxxx.github.io。 步骤二、安装hexo1$ npm install -g hexo 手动创建hexo文件夹,假如创建的目录为&#x2F;Users&#x2F;williamii&#x2F;Documents&#x2F;hexo 1234$ cd &#x2F;Users&#x2F;willi">
 <meta property="og:type" content="website">
@@ -367,9 +367,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-JS基础" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-diary20200304" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">JS基础</h1>
+        <h1 class="article-title">diary20200304</h1>
     
     <div class="article-meta">
         
@@ -377,21 +377,15 @@
         
         <span class="book">
             
-                <a  data-rel="JS">JS</a>
+                <a  data-rel="每日学习">每日学习</a>
             
         </span>
         
-        
-        <span class="tag">
-            
-            <a class="color3">JS</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-23 11:11:48'>2020-01-23 11:11</time>
+        创建时间:<time class="date" title='更新时间: 2020-03-04 22:16:08'>2020-03-04 21:13</time>
         
     </div>
     <div class="article-meta">
@@ -413,7 +407,7 @@
     
     <div class="toc-ref">
     
-        
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#页面导入样式时，使用link和-import有什么区别？"><span class="toc-text">页面导入样式时，使用link和@import有什么区别？</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值"><span class="toc-text">用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写一个方法去掉字符串中的空格，要求传入不同的类型分别能去掉前、后、前后、中间的空格"><span class="toc-text">写一个方法去掉字符串中的空格，要求传入不同的类型分别能去掉前、后、前后、中间的空格</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#去除字符串中最后一个指定的字符"><span class="toc-text">去除字符串中最后一个指定的字符</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#写一个方法把下划线命名转成大驼峰命名"><span class="toc-text">写一个方法把下划线命名转成大驼峰命名</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -429,7 +423,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h3 id="页面导入样式时，使用link和-import有什么区别？"><a href="#页面导入样式时，使用link和-import有什么区别？" class="headerlink" title="页面导入样式时，使用link和@import有什么区别？"></a>页面导入样式时，使用link和@import有什么区别？</h3><p>区别：<br>1.link是HTML标签，@import是css提供的。<br>2.link引入的样式页面加载时同时加载，@import引入的样式需等页面加载完成后再加载。<br>3.link没有兼容性问题，@import不兼容ie5以下。<br>4.link可以通过js操作DOM动态引入样式表改变样式，而@import不可以。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;style&gt;</span><br><span class="line">    @import url(style.css);</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值"><a href="#用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值" class="headerlink" title="用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值"></a>用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">var arr = new Array(5);</span><br><span class="line">   var num = randomNumber();</span><br><span class="line">   var i = 0;</span><br><span class="line">   randomArr(arr,num);</span><br><span class="line">   <span class="keyword">function</span> randomArr(arr,num) &#123;</span><br><span class="line">       <span class="keyword">if</span> (arr.indexOf(num)&lt; 0)&#123;</span><br><span class="line">           arr[i] = num;</span><br><span class="line">           i++;</span><br><span class="line">       &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">           num = randomNumber();</span><br><span class="line">       &#125;</span><br><span class="line">       <span class="keyword">if</span> (i&gt;=arr.length)&#123;</span><br><span class="line">           console.log(arr);</span><br><span class="line">           <span class="built_in">return</span>;</span><br><span class="line">       &#125;<span class="keyword">else</span>&#123;</span><br><span class="line">           randomArr(arr,num)</span><br><span class="line">       &#125;</span><br><span class="line">   &#125;</span><br><span class="line">   <span class="keyword">function</span> <span class="function"><span class="title">randomNumber</span></span>() &#123;</span><br><span class="line">       <span class="built_in">return</span> Math.floor(Math.random()*31 + 2)</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="写一个方法去掉字符串中的空格，要求传入不同的类型分别能去掉前、后、前后、中间的空格"><a href="#写一个方法去掉字符串中的空格，要求传入不同的类型分别能去掉前、后、前后、中间的空格" class="headerlink" title="写一个方法去掉字符串中的空格，要求传入不同的类型分别能去掉前、后、前后、中间的空格"></a>写一个方法去掉字符串中的空格，要求传入不同的类型分别能去掉前、后、前后、中间的空格</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">var str = <span class="string">'  abc d e f  g '</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">function</span> deleSpac(str,direction) &#123; // 1 串的模板 2 清除哪边空格</span><br><span class="line">           <span class="built_in">let</span> Reg = <span class="string">''</span>;</span><br><span class="line">           switch(direction) &#123;</span><br><span class="line">               <span class="keyword">case</span> <span class="string">'left'</span> : // 去除左边</span><br><span class="line">                   Reg = /^[\s]+/g;</span><br><span class="line">                   <span class="built_in">break</span>;</span><br><span class="line">               <span class="keyword">case</span> <span class="string">'right'</span> : // 去除右边</span><br><span class="line">                   Reg = /([\s]*)$/g;</span><br><span class="line">                   <span class="built_in">break</span>;</span><br><span class="line">               <span class="keyword">case</span> <span class="string">'both'</span> : // 去除两边</span><br><span class="line">                   Reg = /(^\s*)|(\s*$)/g</span><br><span class="line">                   <span class="built_in">break</span>;</span><br><span class="line">               default :   // 没传默认全部，且为下去除中间空格做铺垫</span><br><span class="line">                   Reg = /[\s]+/g;</span><br><span class="line">                   <span class="built_in">break</span>;</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="built_in">let</span> newStr = str.replace(Reg,<span class="string">''</span>);</span><br><span class="line">           <span class="keyword">if</span> ( direction == <span class="string">'middle'</span> )&#123;</span><br><span class="line">               <span class="built_in">let</span> RegLeft = str.match(/(^\s*)/g)[0]; // 保存右边空格</span><br><span class="line">               <span class="built_in">let</span> RegRight = str.match(/(\s*$)/g)[0]; // 保存左边空格</span><br><span class="line">               newStr = RegLeft + newStr + RegRight; // 将空格加给清完全部空格后的字符串</span><br><span class="line">           &#125;</span><br><span class="line">           <span class="built_in">return</span> newStr;</span><br><span class="line">   &#125;</span><br><span class="line">deleSpac(str,<span class="string">'left'</span>)</span><br></pre></td></tr></table></figure>
+
+<h3 id="去除字符串中最后一个指定的字符"><a href="#去除字符串中最后一个指定的字符" class="headerlink" title="去除字符串中最后一个指定的字符"></a>去除字符串中最后一个指定的字符</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">var str = <span class="string">'abcc'</span>;</span><br><span class="line"><span class="keyword">function</span> deleteStr(str,text)&#123;</span><br><span class="line">	var index  = str.lastIndexOf(text)</span><br><span class="line"></span><br><span class="line">	<span class="built_in">return</span> str.substring(0,index) + str.substring(index+1,str.length)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<h3 id="写一个方法把下划线命名转成大驼峰命名"><a href="#写一个方法把下划线命名转成大驼峰命名" class="headerlink" title="写一个方法把下划线命名转成大驼峰命名"></a>写一个方法把下划线命名转成大驼峰命名</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">var str = <span class="string">'_a_b_c_'</span>;</span><br><span class="line">var name = str</span><br><span class="line">   .split(<span class="string">'_'</span>)</span><br><span class="line">   .map(item =&gt; item.charAt(0).toUpperCase() + item.substr(1, item.length))</span><br><span class="line">   .join(<span class="string">''</span>);</span><br></pre></td></tr></table></figure>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
     </div>
@@ -440,12 +444,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>JS基础</p>
+    <p><span class="copy-title">文章标题:</span>diary20200304</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="WilliamII">WilliamII</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-01-23, 11:11:04</p>
-    <p><span class="copy-title">最后更新:</span>2020-01-23, 11:11:48</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/23/JS%E5%9F%BA%E7%A1%80/" title="JS基础">http://yoursite.com/2020/01/23/JS%E5%9F%BA%E7%A1%80/</a>
+    <p><span class="copy-title">发布时间:</span>2020-03-04, 21:13:02</p>
+    <p><span class="copy-title">最后更新:</span>2020-03-04, 22:16:08</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/04/diary20200304/" title="diary20200304">http://yoursite.com/2020/03/04/diary20200304/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
