@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hexo制作Blogs的流程说明 | 徐逸民</title>
-  <meta name="keywords" content=" HEXO ">
-  <meta name="description" content="Hexo制作Blogs的流程说明 | 徐逸民">
+  <title>diary20200306 | 徐逸民</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="diary20200306 | 徐逸民">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="title: Hexo制作Blogs的流程说明 步骤一、创建github仓库在github创建与用户名对应的仓库，如用户名为xxxx，则需要创建的仓库为 xxxx.github.io。 步骤二、安装hexo1$ npm install -g hexo 手动创建hexo文件夹,假如创建的目录为&#x2F;Users&#x2F;williamii&#x2F;Documents&#x2F;hexo 1234$ cd &#x2F;Users&#x2F;willi">
 <meta property="og:type" content="website">
@@ -427,9 +427,9 @@
 </aside>
 <div class="post">
     <div class="pjax">
-        <article id="post-Hexo-Create-Blogs" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-diary20200306" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hexo制作Blogs的流程说明</h1>
+        <h1 class="article-title">diary20200306</h1>
     
     <div class="article-meta">
         
@@ -437,21 +437,15 @@
         
         <span class="book">
             
-                <a  data-rel="BLOGS搭建">BLOGS搭建</a>
+                <a  data-rel="每日学习">每日学习</a>
             
         </span>
         
-        
-        <span class="tag">
-            
-            <a class="color5">HEXO</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-        创建时间:<time class="date" title='更新时间: 2020-01-23 10:33:52'>2020-01-20 11:06</time>
+        创建时间:<time class="date" title='更新时间: 2020-04-13 23:17:06'>2020-03-06 19:23</time>
         
     </div>
     <div class="article-meta">
@@ -473,7 +467,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#步骤一、创建github仓库"><span class="toc-text">步骤一、创建github仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#步骤二、安装hexo"><span class="toc-text">步骤二、安装hexo</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署GitHub"><span class="toc-text">部署GitHub</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#安装hexo-deployer-git，-以及部署"><span class="toc-text">安装hexo-deployer-git， 以及部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#部署成功"><span class="toc-text">部署成功</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#更新部署"><span class="toc-text">更新部署</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#引用来源"><span class="toc-text">引用来源</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#包装类"><span class="toc-text">包装类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#多维数组"><span class="toc-text">多维数组</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#类数组"><span class="toc-text">类数组</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -489,25 +483,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="步骤一、创建github仓库"><a href="#步骤一、创建github仓库" class="headerlink" title="步骤一、创建github仓库"></a>步骤一、创建github仓库</h3><p>在github创建与用户名对应的仓库，如用户名为xxxx，则需要创建的仓库为 xxxx.github.io。</p>
-<h3 id="步骤二、安装hexo"><a href="#步骤二、安装hexo" class="headerlink" title="步骤二、安装hexo"></a>步骤二、安装hexo</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo</span><br></pre></td></tr></table></figure>
-<p>手动创建hexo文件夹,假如创建的目录为/Users/williamii/Documents/hexo</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ <span class="built_in">cd</span> /Users/williamii/Documents/hexo</span><br><span class="line">$ hexo init</span><br><span class="line">$ npm install</span><br><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>Hexo Server已经启动了，在浏览器中打开 <a href="http://localhost:4000" target="_blank" rel="noopener">http://localhost:4000</a> ，<br>你可以按Ctrl+C 停止Server。</p>
-<p>打开新的命令行窗口(command+T)，创建新文章，”My New Post”</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>执行下面的命令，将markdown文件生成静态网页。</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<h3 id="部署GitHub"><a href="#部署GitHub" class="headerlink" title="部署GitHub"></a>部署GitHub</h3><p>在hexo下找到_config.yml，找到</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>:</span><br></pre></td></tr></table></figure>
-<p>修改为</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://hexo.io/docs/deployment.html</span></span><br><span class="line">deploy:</span><br><span class="line">  <span class="built_in">type</span>: git</span><br><span class="line">  repository: https://github.com/xxxx/xxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+        <h3 id="包装类"><a href="#包装类" class="headerlink" title="包装类"></a>包装类</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">var str = <span class="string">'123'</span>;</span><br><span class="line">str.len = 4;//undefined</span><br><span class="line">//过程</span><br><span class="line">//基本类型数据无法拥有属性，length是系统自带，一旦添加属性，系统默认调用构造函数并立即执行delete删除掉</span><br><span class="line">//new String(str).len delete</span><br><span class="line"></span><br><span class="line">var num = 123;</span><br><span class="line">num.len = 1;//undefined</span><br></pre></td></tr></table></figure>
+<h3 id="多维数组"><a href="#多维数组" class="headerlink" title="多维数组"></a>多维数组</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">//创建多维数组 numrows第一维的长度，numcols第二维的长度，initial第二维的内容(每一位都一样)</span><br><span class="line">Array.matrix = <span class="keyword">function</span>(numrows, numcols, initial) &#123;</span><br><span class="line">	var arr = [];</span><br><span class="line">	<span class="keyword">for</span>(var i = 0; i &lt; numrows; ++i) &#123;</span><br><span class="line">		var columns = [];</span><br><span class="line">		<span class="keyword">for</span>(var j = 0; j &lt; numcols; ++j) &#123;</span><br><span class="line">			columns[j] = initial;</span><br><span class="line">		&#125;</span><br><span class="line">		arr[i] = columns;</span><br><span class="line">	&#125;</span><br><span class="line">	<span class="built_in">return</span> arr;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">var nums = Array.matrix(5, 5, 0);</span><br><span class="line">console.log(nums[1][1]); // 显示 0 </span><br><span class="line">var names = Array.matrix(3, 3, <span class="string">""</span>);</span><br><span class="line">names[1][2] = <span class="string">"Joe"</span>;</span><br><span class="line">console.log(names[1][2]); // <span class="string">"Joe"</span></span><br><span class="line">var grades = [</span><br><span class="line">	[89, 77, 78],</span><br><span class="line">	[76, 82, 81],</span><br><span class="line">	[91, 94, 89]</span><br><span class="line">];</span><br><span class="line">console.log(grades[2][2]); // 89</span><br></pre></td></tr></table></figure>
 
-<h3 id="安装hexo-deployer-git，-以及部署"><a href="#安装hexo-deployer-git，-以及部署" class="headerlink" title="安装hexo-deployer-git， 以及部署"></a>安装hexo-deployer-git， 以及部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git --save</span><br><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<h3 id="部署成功"><a href="#部署成功" class="headerlink" title="部署成功"></a>部署成功</h3><p>在浏览器中打开 xxxx.github.io ，正常显示网页，表明部署成功。</p>
-<h3 id="更新部署"><a href="#更新部署" class="headerlink" title="更新部署"></a>更新部署</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo generation // 或者hexo g</span><br><span class="line">$ hexo deploy // 或者hexo d</span><br></pre></td></tr></table></figure>
-
-<h3 id="引用来源"><a href="#引用来源" class="headerlink" title="引用来源"></a>引用来源</h3><p>More info: <a href="https://juejin.im/post/5a07cf9951882503dc532fd8#heading-6" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="类数组"><a href="#类数组" class="headerlink" title="类数组"></a>类数组</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"> var obj = &#123;</span><br><span class="line">	<span class="string">'0'</span> : <span class="string">'a'</span>,</span><br><span class="line">	<span class="string">'1'</span> : <span class="string">'b'</span>,</span><br><span class="line">	<span class="string">'2'</span> : <span class="string">'c'</span>,</span><br><span class="line">	<span class="string">'3'</span> : <span class="string">'d'</span>,</span><br><span class="line">	<span class="string">'length'</span> : 4,</span><br><span class="line">	<span class="string">'push'</span> : Array.prototype.push</span><br><span class="line">&#125;</span><br><span class="line">//控制台输出 obj.push(<span class="string">'g'</span>)</span><br><span class="line">/*</span><br><span class="line">Array.prototype.push = <span class="keyword">function</span>(target)&#123;</span><br><span class="line">	obj[obj.length] = target;</span><br><span class="line">	obj.length ++;</span><br><span class="line">&#125;</span><br><span class="line">*/</span><br><span class="line"></span><br><span class="line">var obj1 = &#123;</span><br><span class="line">	<span class="string">'2'</span> : <span class="string">'a'</span>,</span><br><span class="line">	<span class="string">'3'</span> : <span class="string">'b'</span>,</span><br><span class="line">	<span class="string">'length'</span> : 2,</span><br><span class="line">	<span class="string">'push'</span> : Array.prototype.push</span><br><span class="line">&#125;</span><br><span class="line">obj1.push(<span class="string">'c'</span>);</span><br><span class="line">obj1.push(<span class="string">'d'</span>);</span><br><span class="line">/*</span><br><span class="line"> obj1.push(<span class="string">'c'</span>) ==&gt; obj1[obj1.length] = <span class="string">'c'</span> ==&gt;obj1[2] = <span class="string">'c'</span> </span><br><span class="line"> 然后obj1.length ++ 然后</span><br><span class="line"> obj1.push(<span class="string">'d'</span>) ==&gt; obj1[obj1.length] = <span class="string">'d'</span> ==&gt;obj1[3] = <span class="string">'c'</span> </span><br><span class="line">*/</span><br></pre></td></tr></table></figure>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
@@ -519,12 +498,12 @@
 
 
 <div class="article_copyright">
-    <p><span class="copy-title">文章标题:</span>Hexo制作Blogs的流程说明</p>
+    <p><span class="copy-title">文章标题:</span>diary20200306</p>
     
     <p><span class="copy-title">本文作者:</span><a  title="WilliamII">WilliamII</a></p>
-    <p><span class="copy-title">发布时间:</span>2020-01-20, 11:06:24</p>
-    <p><span class="copy-title">最后更新:</span>2020-01-23, 10:33:52</p>
-    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/01/20/Hexo-Create-Blogs/" title="Hexo制作Blogs的流程说明">http://yoursite.com/2020/01/20/Hexo-Create-Blogs/</a>
+    <p><span class="copy-title">发布时间:</span>2020-03-06, 19:23:12</p>
+    <p><span class="copy-title">最后更新:</span>2020-04-13, 23:17:06</p>
+    <span class="copy-title">原始链接:</span><a class="post-url" href="/2020/03/06/diary20200306/" title="diary20200306">http://yoursite.com/2020/03/06/diary20200306/</a>
     <p>
         <span class="copy-title">版权声明:</span><i class="fa fa-creative-commons"></i> <a rel="license noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" title="CC BY-NC-SA 4.0 International" target = "_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
     </p>
